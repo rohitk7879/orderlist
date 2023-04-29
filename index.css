@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-image: url("./drew-coffman-jUOaONoXJQk-unsplash.jpg");
+    background-size: cover;
+    /* opacity:0.9; */
+}
+#nav{
+    /* background-color: rgb(255, 255, 255); */
+    position: fixed;
+    width: 97.1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    opacity: 0.9;
+    box-shadow: 3px 3px 10px gray;
+}
+#nav > img{
+    height: 100%;
+}
+
+#nav span:hover,.right-container > img:hover, #nav > img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.right-container > img{
+    width: 30px;
+    height: 30px;   
+}
+.left-container{
+    display: flex;
+    gap:10px;
+    
+}
+.left-container span{
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.right-container{
+    display: flex;
+    gap:10px;
+    
+}
+.right-container span{
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.popup{
+    position: fixed;
+    color: transparent;
+}
+.popup-one{
+    top: 70px;
+    left: 290px;
+}
+.popup-two{
+    top: 90px;
+    left: 325px;
+}
+#section{
+    position: relative;
+    top: 50px;
+    /* height: 80vh; */
+}
+#one{
+    position: relative;
+    width: 600px;
+    top: 60px;
+    left: 200px;
+    font-size: 48px;
+    color: #000;
+}
+#two{
+    position: fixed;
+    width: 400px;
+    top: 155px;
+    left: 400px;
+    font-size: 48px;
+    color: #000;
+}
+#confim-order,#menu{
+    position: relative;
+    background-color: transparent;
+    opacity: 0.9;
+    background-color: transparent;
+    opacity: 0.9;
+    color: black;
+    height: 50px;
+    width: 180px;
+    animation: menu 2s linear infinite ;
+    font-size: 20px;
+}
+#confim-order{
+    display: none;
+    top: 100px;
+    left: 1160px;
+}
+#menu{
+    top: 303px;
+    left: 689px;  
+}
+@keyframes menu {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }   
+}
+#menu:hover, #confim-order:hover{
+    cursor: pointer;
+}
+
+.menu-card{
+    position: relative;
+    top:100px;
+    width: 800px;
+    left: 330px;
+    display: flex;
+    flex-direction: column ;
+    overflow-y: scroll;
+    scrollbar-width:thin;
+}
+.row{
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+}
+.row span, .row button{
+    color: black;
+    padding: 10px 0;
+    
+}
+.row span{
+    font-size: 24px;
+    font-weight: 800;  
+    display: inline-block;
+    width: 300px;  
+}
+.row button{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    padding: 0;
+    background:transparent;
+    margin: auto;
+}
+
+.changebg{
+    animation: bgchange 2s linear 1 ;
+}
+@keyframes bgchange {
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color:transparent;
+    }   
+}
+.popup-ani{
+    animation: popupc 5s linear 1 ;
+}
+
+@keyframes popupc {
+    0%{
+        color: transparent;
+    }
+    50%{
+        color: white;
+        font-size: 20px;
+    }
+    100%{
+        color: transparent;
+    }
+    
+}
